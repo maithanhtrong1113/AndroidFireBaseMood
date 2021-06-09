@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="606dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="600dp"
+        android:background="@drawable/bg_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/happy" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="108dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/normal" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/unhappy" />
+
+    <Button
+        android:id="@+id/btnSignInM"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_signin"
+        android:text="sign in"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:cornerRadius="50pt"
+        app:layout_constraintEnd_toEndOf="@+id/txtPassword"
+        app:layout_constraintStart_toStartOf="@+id/txtPassword"
+        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="40dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:hint="Type password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/txtEmail"
+        app:layout_constraintStart_toStartOf="@+id/txtEmail"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <TextView
+        android:id="@+id/tvForgotPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="FORGOT PASSWORD?"
+        android:textColor="#8C000000"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnSignInM"
+        app:layout_constraintStart_toStartOf="@+id/btnSignInM"
+        app:layout_constraintTop_toBottomOf="@+id/btnSignInM" />
+
+    <TextView
+        android:id="@+id/tvRegisterWithGG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="SIGN  IN WITH GOOGLE"
+        android:textColor="#B02D58F3"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/tvForgotPassWord"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvForgotPassWord"
+        app:layout_constraintTop_toBottomOf="@+id/tvForgotPassWord" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvRegisterWithGG"
+        app:layout_constraintEnd_toStartOf="@+id/tvRegisterWithGG"
+        app:layout_constraintTop_toTopOf="@+id/tvRegisterWithGG"
+        app:srcCompat="@drawable/icons_google" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Do not have an account?"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/btnSignInM"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="Register here"
+        android:textColor="#FFFFFF"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ProgressBar
+        android:id="@+id/pgrSignin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
